@@ -17,7 +17,7 @@ Para realizar a compilação dos códigos-fonte aqui disponibilizados, faz-se ne
 
 <img src="https://github.com/lihviaa/CP/blob/main/src/LAB%201%20-%20img%202.jpeg" alt="Processo de compilação">
 
-<img src="https://github.com/lihviaa/CP/blob/main/src/LAB%201%20-%20img%202.jpeg" alt="Processo de commit">
+<img src="https://github.com/lihviaa/CP/blob/main/src/LAB%201%20-%20img%201.jpeg" alt="Processo de commit">
 
 
 
