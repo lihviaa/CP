@@ -17,8 +17,6 @@ Para realizar a compilação dos códigos-fonte aqui disponibilizados, faz-se ne
 
 <img public="https://github.com/lihviaa/parallel-comp/blob/main/public/lab01/lab01_img01.jpeg" alt="Processo de compilação">
 
-
-
 <hr>
 <ins>Referências:</ins>
 <ul>
