@@ -1,0 +1,1 @@
+Sobre o diretório assets
