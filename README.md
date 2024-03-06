@@ -3,7 +3,7 @@
 
 <h2>Integrantes</h2>
 <ul>
-  <li>Guilherme de Abreu Schulz</li>
+  <li>Guilherme de Abreu Schulz </li>
   <li>Livia Alabarse dos Santos</li>
   <li>Pedro Henrique Araujo Farias</li>
 </ul>
