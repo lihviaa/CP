@@ -1,5 +1,5 @@
 <h1>Lab02 - Programação matriz-vetor</h1>
-p>Laboratório realizado em 06/03/2024</p>
+<p>Laboratório realizado em 06/03/2024</p>
 
 <h2>Sobre a atividade desenvolvida no laboratório</h2>
 <p>No Lab02, os integrantes construíram uma solução para multiplicação matriz-vetor utilizando threads.</p>
