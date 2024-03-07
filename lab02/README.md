@@ -14,7 +14,7 @@
 
 <h2>Compilação e execução</h2>
 <p>Para compilar o código-fonte desenvolvido, executou-se, <b>em um terminal <i>Linux</i> com compilador <code>gcc</code></b>, a seguinte linha de comando:</p>
-<p><code>gcc lab02.c -o lab02.out</code></p>
+<p><code>gcc lab02.c -lpthread -o lab02.out</code></p>
 <p>Para executar o arquivo gerado a partir da compilação do código-fonte descrita acima, executou-se o seguinte comando:</p>
 <p><code>./lab02.out</code></p>
 <p>Para informações mais detalhadas a respeito, leia as seções <b>Compilação</b> e <b>Execução</b> no <a href="https://github.com/lihviaa/parallel-comp/blob/main/README.md">documento descritivo do repositório</a>.</p>
