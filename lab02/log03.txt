@@ -1,0 +1,35 @@
+Parallel: Result[4] calculated by Thread 139648680572480
+Parallel: Result[3] calculated by Thread 139648688965184
+Parallel: Result[2] calculated by Thread 139648697357888
+Parallel: Result[1] calculated by Thread 139648705750592
+Parallel: Result[0] calculated by Thread 139648714143296
+
+Parallel execution finished.
+
+Random array generated:
+{ 66, 47, 86, 75, 88 }
+
+Random matrix generated:
+{ { 25, 98, 29, 59, 56 },
+  { 52, 79, 00, 90, 68 },
+  { 35, 91, 74, 88, 19 },
+  { 22, 04, 13, 51, 36 },
+  { 13, 80, 61, 42, 08 } }
+
+Resulting array:
+{ 18103, 19879, 21223, 9751, 13718 }
+
+Matrix written to matrix.txt
+Array written to array.txt
+Result written to result.txt
+Serial: Result[0] calculated
+Serial: Result[1] calculated
+Serial: Result[2] calculated
+Serial: Result[3] calculated
+Serial: Result[4] calculated
+Serial execution result written to srl_result.txt
+
+
+---------------- BENCHMARK ----------------
+Serial execution time: ~0.000003000s
+Parallel execution time: ~0.000809000s

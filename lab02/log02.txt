@@ -1,0 +1,26 @@
+Parallel: Result[4] calculated by Thread 140489101653568
+Parallel: Result[3] calculated by Thread 140489110046272
+Parallel: Result[2] calculated by Thread 140489118438976
+Parallel: Result[1] calculated by Thread 140489126831680
+Parallel: Result[0] calculated by Thread 140489135224384
+
+Parallel execution finished.
+
+Random array generated:
+{ 52, 02, 64, 29, 11 }
+
+Random matrix generated:
+{ { 80, 45, 71, 43, 94 },
+  { 10, 46, 32, 22, 59 },
+  { 56, 65, 34, 62, 21 },
+  { 75, 27, 98, 34, 06 },
+  { 25, 04, 46, 61, 65 } }
+
+Resulting array:
+{ 11075, 3947, 7247, 11278, 6736 }
+
+Matrix written to matrix.txt
+Array written to array.txt
+Result written to result.txt
+
+Parallel execution time: ~0.000794000s

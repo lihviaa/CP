@@ -1,0 +1,12 @@
+Parallel: Result[4] calculated by Thread 139965874812480
+Parallel: Result[3] calculated by Thread 139965883205184
+Parallel: Result[2] calculated by Thread 139965891597888
+Parallel: Result[1] calculated by Thread 139965899990592
+Parallel: Result[0] calculated by Thread 139965908383296
+
+Parallel execution finished.
+Matrix written to matrix.txt
+Array written to array.txt
+Result written to result.txt
+
+Parallel execution time: ~0.000796000s
