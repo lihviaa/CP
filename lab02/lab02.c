@@ -86,12 +86,13 @@ int main(int argc, char *argv[]) {
     if(bm_flag) {
         srl_result_p = fopen("srl_result.txt", "w");
         srl_result_array = (int*) malloc(lines * sizeof(int));
+	printf("\n");
         srl_tic = (double) clock()/CLOCKS_PER_SEC;
         srl_mat_array(srl_result_array);
         srl_toc = (double) clock()/CLOCKS_PER_SEC;
         write_array_file(srl_result_p, srl_result_array, lines);
-        printf("Serial execution result written to srl_result.txt\n");
-        printf("\n\n---------------- BENCHMARK ----------------");
+        printf("\nSerial execution result written to srl_result.txt\n");
+        printf("\n---------------- BENCHMARK ----------------");
         printf("\nSerial execution time: ~%.9fs", srl_toc - srl_tic);
     }
 
