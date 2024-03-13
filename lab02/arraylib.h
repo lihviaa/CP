@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void rnd_populate(int *array, int elements, int range);
+void print_array(int* array, int elements);
 int *rnd_array_alloc(int elements, int range);
+void rnd_populate(int *array, int elements, int range);
+void print_matrix(int** matrix, int lines, int columns);
 int **rnd_matrix_alloc(int lines, int columns, int range);
 void write_array_file(FILE *fpointer, int *array, int elements);
 void write_matrix_file(FILE *fpointer, int **matrix, int lines, int columns);
@@ -55,4 +57,30 @@ void write_matrix_file(FILE *fpointer, int **matrix, int lines, int columns) {
     }
 
     fprintf(fpointer, " }\n");
+}
+
+void print_array(int *array, int elements) {
+    printf("{ ");
+    for(int i = 0; i < elements; i++) {
+        printf("%02d", array[i]);
+
+        if(i != elements - 1) {
+            printf(", ");
+        }
+    }
+    
+    printf(" }");
+}
+
+void print_matrix(int **matrix, int lines, int columns) {
+    printf("{ ");
+    for(int j = 0; j < lines; j++) {
+        print_array(matrix[j], columns);
+        
+        if(j != lines - 1) {
+            printf(",\n  ");
+        } 
+    }
+
+    printf(" }\n");
 }
