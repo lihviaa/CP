@@ -31,7 +31,7 @@
 <ul>
  <li><code>&ltlines&gt</code>: <strong>OBRIGATÓRIO</strong>. Define o <strong>número de linhas da matriz aleatória a ser gerada</strong>;</li>
  <li><code>&ltcolumns&gt</code>: <strong>OBRIGATÓRIO</strong>. Define o <strong>número de colunas da matriz aleatória a ser gerada</strong>;</li>
- <li><code>"-p"</code>: <strong>Opcional</strong>. Exibe os vetores e matrizes gerados na linha de comando;</li>
+ <li><code>"-p"</code>: <strong>Opcional</strong>. Exibe no terminal os vetores e matrizes gerados. Por padrão, a saída sempre é gerada em arquivos <code>.txt</code>;</li>
  <li><code>"-bm"</code>: <strong>Opcional</strong>. Habilita <strong>comparação entre execuções paralela e serial do algoritmo.</strong></li>
 </ul>
 <h3>Exemplos de execução</h3>
@@ -53,4 +53,4 @@
 <p>Consulte também o diretório <a href="https://github.com/lihviaa/parallel-comp/tree/main/lab02/logs"><code>logs</code></a> para verificar as saídas obtidas nas execuções do código-fonte compilado.</p>
 
 <h3><i>Benchmarking</i></h3>
-<p>A comparação entre as execuções <strong>serial</strong> e <strong>paralela</strong> do algoritmo foram realizadas a partir da função <code><strong>clock</strong></code>, presente no arquivo <i>header</i> <code><strong>time.h</strong></code>, o qual foi devidamente incluído no <a href="https://github.com/lihviaa/parallel-comp/blob/main/lab02/lab02.c"><strong>código-fonte</strong></a> do laboratório.</p>
+<p>A comparação entre as execuções <strong>serial</strong> e <strong>paralela</strong> do algoritmo foi realizada a partir da função <code><strong>clock</strong></code>, presente no arquivo <i>header</i> <code><strong>time.h</strong></code>, o qual foi devidamente incluído no <a href="https://github.com/lihviaa/parallel-comp/blob/main/lab02/lab02.c"><strong>código-fonte</strong></a> do laboratório.</p>
