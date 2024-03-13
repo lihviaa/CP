@@ -2,7 +2,7 @@
 <p>Laboratório realizado em 06/03/2024</p>
 
 <h2>Sobre a atividade desenvolvida no laboratório</h2>
-<p>No Lab02, os integrantes construíram uma solução para multiplicação matriz-vetor utilizando threads.</p>
+<p>No Lab02, os integrantes construíram uma solução para multiplicação matriz-vetor utilizando threads e, adicionalmente, realizaram um <i>benchmarking</i> comparando as execuções serial e paralela do algoritmo desenvolvido.</p>
 
 <h2>Índice</h2>
 <p>O diretório <code>lab02</code> está organizado da seguinte forma:</p>
@@ -21,5 +21,5 @@
 
 <h2>Comprovação de êxito da atividade</h2>
 <p>Para comprovar que os resultados propostos pela atividade foram alcançados, segue uma captura de tela apresentando <b>compilação</b> e <b>execução</b> da solução desenvolvida:</p>
-<img src="" alt="Compilação e execução da atividade proposta no laboratório." />
+<img src="https://raw.githubusercontent.com/lihviaa/parallel-comp/main/assets/execucaolab02.png" alt="Compilação e execução da atividade proposta no laboratório." />
 <p>Consulte também o arquivo <a href=""><code>log.txt</code></a> para verificar a saída obtida na execução do código-fonte compilado.</p>
