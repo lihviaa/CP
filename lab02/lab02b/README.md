@@ -24,4 +24,10 @@
 
 <h3>Exemplos de execução</h3>
 
-<h2>Comprovação de êxito da atividade</h2>
+<h2>Questões</h2>
+
+<ins><h3>1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução</h3></ins>
+
+<ins><h3>2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.</h3></ins>
+
+<ins><h3>3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.</h3></ins>
