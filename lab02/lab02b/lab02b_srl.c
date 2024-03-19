@@ -7,7 +7,7 @@ void srl_mat_array(int **matrix, int *array, int *srl_result, int lines, int col
 
 int main(int argc, char *argv[]) {
     if(argc < 3 || argc > 4) {
-        fprintf(stderr, "Usage: %s <lines> <columns> [-p]\n", argv[0]);
+        fprintf(stderr, "Usage: <program> <lines> <columns> [-p]\n");
         return 1;
     }
 
@@ -48,12 +48,12 @@ int main(int argc, char *argv[]) {
     printf("Result written to srl_result.txt\n");
 
     for(int i = 0; i < lines; i++) free(matrix[i]);
-    fclose(array_file);
-    fclose(matrix_file);
-    fclose(srl_result_file);
     free(matrix);
     free(array);
     free(srl_result_array);
+    fclose(array_file);
+    fclose(matrix_file);
+    fclose(srl_result_file);
 
     return 0;
 }

@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     long thrd_n;
 
     if(argc < 3 || argc > 4) {
-        fprintf(stderr, "Please, check README before running file.\n");
+        fprintf(stderr, "Usage: <program> <lines> <columns> [-p]\n");
         return 1;
     }
 
@@ -68,7 +68,6 @@ int main(int argc, char *argv[]) {
     fclose(prll_array);
     fclose(prll_result);
     fclose(prll_matrix);
-    
 
     return 0;
 }
