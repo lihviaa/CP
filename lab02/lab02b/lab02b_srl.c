@@ -23,19 +23,16 @@ int main(int argc, char *argv[]) {
 
     if(prnt_flag) {
 
-        printf("\nRandom array generated:\n");
+        printf("\nArray generated:\n");
         print_array(array, columns);
 
-        printf("\n\nRandom matrix generated:\n");
+        printf("\n\nMatrix generated:\n");
         print_matrix(matrix, lines, columns);
 
         printf("\nResulting array:\n");
         print_array(srl_result_array, lines);
         printf("\n\n");
-        
     }
-
-
 
     FILE *array_file = fopen("array.txt", "w");
     FILE *matrix_file = fopen("matrix.txt", "w");
@@ -49,8 +46,6 @@ int main(int argc, char *argv[]) {
 
     write_array_file(srl_result_file, srl_result_array, lines);
     printf("Result written to srl_result.txt\n");
-
-    
 
     for(int i = 0; i < lines; i++) free(matrix[i]);
     fclose(array_file);

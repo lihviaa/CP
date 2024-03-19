@@ -13,7 +13,6 @@ void *par_mat_array(void* thread);
 
 int main(int argc, char *argv[]) {
     long thrd_n;
-    srand(time(NULL));
 
     if(argc < 3 || argc > 4) {
         fprintf(stderr, "Please, check README before running file.\n");
@@ -41,9 +40,9 @@ int main(int argc, char *argv[]) {
     printf("\nParallel execution finished.\n");
 
     if(prnt_flag) {
-        printf("\nRandom array generated:\n");
+        printf("\nArray generated:\n");
         print_array(array, columns);
-        printf("\n\nRandom matrix generated:\n");
+        printf("\n\nMatrix generated:\n");
         print_matrix(matrix, lines, columns);
         printf("\nResulting array:\n");
         print_array(result, lines);
