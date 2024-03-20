@@ -20,6 +20,7 @@
  <li><a href="https://github.com/lihviaa/parallel-comp/tree/main/lab02/lab02b/otm_execs"><code>otm_execs</code></a>: Diretório de <i>logs</i> de execuções da versão paralela <strong>otimizada</strong>.</li>
 </ul>
 
+<p><strong>IMPORTANTE</strong>: A máquina utilizada apresenta <strong>8 núcleos</strong>. Você pode conferir essa informação nos arquivos <code>proc_specs.txt</code> e <code>num_cores.txt</code>, presentes no diretório <code>core-analysis</code>.</p>
 
 <h2>Compilação e execução</h2>
 
