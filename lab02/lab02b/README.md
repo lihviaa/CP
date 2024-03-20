@@ -2,7 +2,7 @@
 <p>Iniciado em 13/03/2024. Concluído em 20/03/2024.</p>
 
 <h2>Sobre a atividade desenvolvida no laboratório</h2>
-<p>No Lab02a, os integrantes construíram uma solução para multiplicação matriz-vetor utilizando threads e, adicionalmente, realizaram um <i>benchmarking</i> comparando as execuções serial e paralela do algoritmo desenvolvido para diferentes números de núcleos (1, 2, 4, 6 e 8).</p>
+<p>No Lab02b, os integrantes construíram uma solução para multiplicação matriz-vetor utilizando threads e, adicionalmente, realizaram um <i>benchmarking</i> comparando as execuções serial e paralela do algoritmo desenvolvido para diferentes números de núcleos (1, 2, 4, 6 e 8).</p>
 
 <p>Na execução do algoritmo, o usuário define o número de linhas e colunas de uma matriz com elementos aleatórios, os quais serão multiplicados pelos elementos de um vetor (com número de elementos correspondente ao número de colunas da matriz) também formado por números aleatórios e, por fim, terão seu resultado armazenado em um vetor de número de elementos correspondente ao número de linhas da matriz.</p>
 <p>Diferentemente do laboratório anterior, onde o foco era validar uma implementação de multiplicação matriz-vetor utilizando <i>pthreads</i>, este laboratório está voltado à análise de desempenho das versões desenvolvidas. Sendo assim, optou-se por remover a saída de vetores e matrizes em arquivos .txt, de modo a <strong>priorizar a performance do programa desenvolvido</strong>.</p>
@@ -21,6 +21,7 @@
 </ul>
 
 <p><strong>IMPORTANTE</strong>: A máquina utilizada apresenta <strong>8 núcleos</strong>. Você pode conferir essa informação nos arquivos <code>proc_specs.txt</code> e <code>num_cores.txt</code>, presentes no diretório <code>core-analysis</code>.</p>
+<img src="https://github.com/lihviaa/parallel-comp/blob/main/assets/lab02b_nproc.png" alt="Número de núcleos do processador"/>
 
 <h2>Compilação e execução</h2>
 
