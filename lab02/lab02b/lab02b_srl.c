@@ -6,33 +6,19 @@
 void srl_mat_array(int **matrix, int *array, int *srl_result, int lines, int columns);
 
 int main(int argc, char *argv[]) {
-    if(argc < 3 || argc > 4) {
-        fprintf(stderr, "Usage: <program> <lines> <columns> [-p]\n");
+    if(argc != 3) {
+        fprintf(stderr, "Usage: <program> <lines> <columns>\n");
         return 1;
     }
 
     int lines = atoi(argv[1]);
     int columns = atoi(argv[2]);
-    int prnt_flag = (argc == 4 && strcmp("-p", argv[3]) == 0) ? 1 : 0;
 
     int *array = rnd_array_alloc(columns, 100);
     int **matrix = rnd_matrix_alloc(lines, columns, 100);
     int *srl_result_array = (int*) malloc(lines * sizeof(int));
 
     srl_mat_array(matrix, array, srl_result_array, lines, columns);
-
-    if(prnt_flag) {
-
-        printf("\nArray generated:\n");
-        print_array(array, columns);
-
-        printf("\n\nMatrix generated:\n");
-        print_matrix(matrix, lines, columns);
-
-        printf("\nResulting array:\n");
-        print_array(srl_result_array, lines);
-        printf("\n\n");
-    }
 
     FILE *array_file = fopen("array.txt", "w");
     FILE *matrix_file = fopen("matrix.txt", "w");

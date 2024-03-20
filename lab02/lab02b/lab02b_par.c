@@ -14,14 +14,13 @@ void *par_mat_array(void* thread);
 int main(int argc, char *argv[]) {
     long thrd_n;
 
-    if(argc < 3 || argc > 4) {
-        fprintf(stderr, "Usage: <program> <lines> <columns> [-p]\n");
+    if(argc != 3) {
+        fprintf(stderr, "Usage: <program> <lines> <columns>\n");
         return 1;
     }
 
     lines = atoi(argv[1]);
     columns = atoi(argv[2]);
-    int prnt_flag = (argc == 4 && strcmp("-p", argv[3]) == 0) ? 1 : 0;
 
     array = rnd_array_alloc(columns, 100);
     matrix = rnd_matrix_alloc(lines, columns, 100);
@@ -39,17 +38,7 @@ int main(int argc, char *argv[]) {
 
     printf("\nParallel execution finished.\n");
 
-    if(prnt_flag) {
-        printf("\nArray generated:\n");
-        print_array(array, columns);
-        printf("\n\nMatrix generated:\n");
-        print_matrix(matrix, lines, columns);
-        printf("\nResulting array:\n");
-        print_array(result, lines);
-        printf("\n\n");
-    }
-
-    FILE *prll_result = fopen("result.txt", "w");
+    FILE *prll_result = fopen("par_result.txt", "w");
     FILE *prll_array = fopen("array.txt", "w");
     FILE *prll_matrix = fopen("matrix.txt", "w");
 
@@ -58,7 +47,7 @@ int main(int argc, char *argv[]) {
     write_array_file(prll_array, array, columns);
     printf("Array written to array.txt\n");
     write_array_file(prll_result, result, lines);
-    printf("Result written to result.txt\n");
+    printf("Result written to par_result.txt\n");
 
     for(int m = 0; m < lines; m++) free(matrix[m]);
     free(matrix);

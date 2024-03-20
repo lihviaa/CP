@@ -1,0 +1,3 @@
+Matrix written to matrix.txt
+Array written to array.txt
+Result written to srl_result.txt

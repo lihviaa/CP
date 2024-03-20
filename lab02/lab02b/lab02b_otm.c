@@ -11,12 +11,12 @@ int lines, columns;
 long num_of_threads;
 long seg_per_thread;
 
-void *par_mat_array(void* thread);
+void *otm_mat_array(void* thread);
 
 int main(int argc, char *argv[]) {
     long thrd_n;
 
-    if(argc < 3 || argc > 4) {
+    if(argc != 4) {
         fprintf(stderr, "Usage: <program> <lines> <columns> <num_of_threads>\n");
         return 1;
     }
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     pthread_t *threads = malloc(num_of_threads * sizeof(pthread_t));
 
     for(thrd_n = 0; thrd_n < num_of_threads; thrd_n++) {
-        pthread_create(&threads[thrd_n], NULL, par_mat_array, (void*) thrd_n);
+        pthread_create(&threads[thrd_n], NULL, otm_mat_array, (void*) thrd_n);
     }
 
     for(thrd_n = 0; thrd_n < num_of_threads; thrd_n++) {
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
 
     printf("\nParallel execution finished.\n");
 
-    FILE *prll_result = fopen("result.txt", "w");
+    FILE *prll_result = fopen("otm_result.txt", "w");
     FILE *prll_array = fopen("array.txt", "w");
     FILE *prll_matrix = fopen("matrix.txt", "w");
 
@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
     write_array_file(prll_array, array, columns);
     printf("Array written to array.txt\n");
     write_array_file(prll_result, result, lines);
-    printf("Result written to result.txt\n");
+    printf("Result written to otm_result.txt\n");
 
     for(int m = 0; m < lines; m++) free(matrix[m]);
     free(matrix);
@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-void *par_mat_array(void* thread) {
+void *otm_mat_array(void* thread) {
     long thread_id = pthread_self();
     long thrd = (long) thread;
     long offset = thrd * seg_per_thread;
@@ -77,7 +77,7 @@ void *par_mat_array(void* thread) {
             result[offset + i] += matrix[offset + i][j] * array[j];
         }
 
-        printf("Parallel: Result[%ld] calculated by Thread %ld\n", offset + i, thread_id);
+	printf("Parallel: Result[%ld] calculated by Thread %ld\n", offset + i, thread_id);
     }
 
     return NULL;
