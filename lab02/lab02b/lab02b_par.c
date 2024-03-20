@@ -38,25 +38,11 @@ int main(int argc, char *argv[]) {
 
     printf("\nParallel execution finished.\n");
 
-    FILE *prll_result = fopen("par_result.txt", "w");
-    FILE *prll_array = fopen("array.txt", "w");
-    FILE *prll_matrix = fopen("matrix.txt", "w");
-
-    write_matrix_file(prll_matrix, matrix, lines, columns);
-    printf("Matrix written to matrix.txt\n");
-    write_array_file(prll_array, array, columns);
-    printf("Array written to array.txt\n");
-    write_array_file(prll_result, result, lines);
-    printf("Result written to par_result.txt\n");
-
     for(int m = 0; m < lines; m++) free(matrix[m]);
     free(matrix);
     free(array);
     free(result);
     free(threads);
-    fclose(prll_array);
-    fclose(prll_result);
-    fclose(prll_matrix);
 
     return 0;
 }

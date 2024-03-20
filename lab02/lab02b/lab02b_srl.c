@@ -20,26 +20,12 @@ int main(int argc, char *argv[]) {
 
     srl_mat_array(matrix, array, srl_result_array, lines, columns);
 
-    FILE *array_file = fopen("array.txt", "w");
-    FILE *matrix_file = fopen("matrix.txt", "w");
-    FILE *srl_result_file = fopen("srl_result.txt", "w");
-
-    write_matrix_file(matrix_file, matrix, lines, columns);
-    printf("Matrix written to matrix.txt\n");
-
-    write_array_file(array_file, array, columns);
-    printf("Array written to array.txt\n");
-
-    write_array_file(srl_result_file, srl_result_array, lines);
-    printf("Result written to srl_result.txt\n");
+    printf("Serial execution done\n");
 
     for(int i = 0; i < lines; i++) free(matrix[i]);
     free(matrix);
     free(array);
     free(srl_result_array);
-    fclose(array_file);
-    fclose(matrix_file);
-    fclose(srl_result_file);
 
     return 0;
 }
