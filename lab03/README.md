@@ -55,7 +55,7 @@
 <img src="https://github.com/lihviaa/parallel-comp/blob/main/assets/lab03-pics/exec-paralela-critical.png" alt="Execução paralela com área crítica."/>
 
 <h2>Questões</h2>
-<ins><h3>1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução</h3></ins>
+<h3>1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução</h3>
 
 <h4>Gráfico Tempo(ms) x Núcleos de Execução Serial (Não-Crítico)</h4>
 <img src="" width=600 align="center" alt="Serial: Tempo x núcleos"/>
@@ -87,13 +87,13 @@
            <td>4,259s</td>
            <td>3,986s</td>
            <td>3,612s</td>
-     </tr>
+  </tr>
 </table>
 
 <p>Com base nos resultados apresentados, fica claro que o tempo de execução paralela diminui significativamente à medida que o número de processadores aumenta. Isso mostra a eficiência do paralelismo para solucionar este problema.</p>
 <hr>
 
-<ins><h3> 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.</h3></ins>
+<h3> 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.</h3>
 
 <h4>Speedup entre execuções Serial-Paralela (Não Crítico)</h4>
 <img src="" width=600 align="center" alt="Serial-Paralela-não-crítica: Speedup"/>
@@ -120,7 +120,7 @@
 <p>Os resultados indicam um aumento no speedup à medida que o número de processadores aumenta. </p>
 
 <hr>
-<ins><h3>3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.</ins></h3>
+<h3>3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.</h3>
 
   
 <table align= "center">
@@ -147,7 +147,7 @@
            <td>4,259s</td>
            <td>3,986s</td>
            <td>3,612s</td>
-     </tr>
+  </tr>
   <tr>
            <td><strong>Speedup Serial-Paralelo (Não-Crítico)</strong></td>
            <td>0,998</td>
@@ -155,7 +155,7 @@
            <td>3,606</td>
            <td>3,853</td>
            <td>4,250</td>
-     </tr>
+  </tr>
 </table>
 
 <h4>Gráfico Tempo(ms) x Núcleos de Execução Serial (Crítico)</h4>
