@@ -58,10 +58,14 @@
 <h3>1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução</h3>
 
 <h4>Gráfico Tempo(ms) x Núcleos de Execução Serial (Não-Crítico)</h4>
-<img src="" width=600 align="center" alt="Serial: Tempo x núcleos"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/603829f4-eb20-4f44-bcdd-8ce3c4e64a4e" width=600 align="center" alt="Serial: Tempo x núcleos"/>
+
 
 <h4>Gráfico de Tempo(ms) x Núcleos de Execução Paralela (Não-Crítico)</h4>
-<img src="" width=600 align="center" alt="Paralela: Tempo x núcleos"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/9341209c-ace9-4f76-80fe-d32089bd3447" width=600 align="center" alt="Paralela: Tempo x núcleos"/>
+
+
+
 
 <table align= "center">
   <tr>
@@ -96,7 +100,8 @@
 <h3> 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.</h3>
 
 <h4>Speedup entre execuções Serial-Paralela (Não Crítico)</h4>
-<img src="" width=600 align="center" alt="Serial-Paralela-não-crítica: Speedup"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/45268de5-3c2c-46ec-9579-9cea516c7078" width=600 align="center" alt="Serial-Paralela-não-crítica: Speedup"/>
+
 
 <table align="center">
     <tr>
@@ -119,10 +124,6 @@
 
 <p>Os resultados indicam um aumento no speedup à medida que o número de processadores aumenta. </p>
 
-<hr>
-<h3>3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.</h3>
-
-  
 <table align= "center">
   <tr>
           <td><strong>Núcleos</strong></td>
@@ -158,14 +159,24 @@
   </tr>
 </table>
 
+<hr>
+<h3>3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.</h3>
+
+  
+
+
 <h4>Gráfico Tempo(ms) x Núcleos de Execução Serial (Crítico)</h4>
-<img src="" width=600 align="center" alt="Serial: Tempo x núcleos"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/0814b6d8-9830-49b6-a266-5526843204e9" width=600 align="center" alt="Serial: Tempo x núcleos"/>
+
 
 <h4>Gráfico de Tempo(ms) x Núcleos de Execução Paralela (Crítico)</h4>
-<img src="" width=600 align="center" alt="Paralela: Tempo x núcleos"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/e1cb7acf-4ae9-4492-a968-762ab21efb1f" width=600 align="center" alt="Paralela: Tempo x núcleos"/>
 
 <h4>Speedup entre execuções Serial-Paralela (Crítico)</h4>
-<img src="" width=600 align="center" alt="Serial-Paralela crítica: Speedup"/>
+<img src="https://github.com/lihviaa/parallel-comp/assets/106118021/dbb0a3a0-8e54-45da-846c-5e55257199ea" width=600 align="center" alt="Serial-Paralela crítica: Speedup"/>
+
+
+
 
 <table align= "center">
   <tr>
