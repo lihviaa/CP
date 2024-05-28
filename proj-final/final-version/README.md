@@ -48,7 +48,7 @@ compilar:
 gcc -o proj-final  proj-final.c -lmpfr -lgmp -fopenmp
 ```
 ## Execução
-Para executar o programa, use o comando abaixo. Substitua <numero_de_threads>, <iteracoes>, e <precisao_bits> pelos valores desejados:
+Para executar o programa, use o comando abaixo. Substitua <numero_de_threads> <iteracoes> e <precisao_bits> pelos valores desejados:
 
 ./proj-final <numero_de_threads> <iteracoes> <precisao_bits>
 ![Screenshot from 2024-05-28 16-12-54](https://github.com/lihviaa/parallel-comp/assets/139653746/a3aa9ab6-9317-4ff9-ac7e-053ff5417030)
