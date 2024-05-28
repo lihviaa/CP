@@ -32,7 +32,7 @@ A função `calcular_soma` é executada por várias threads em paralelo. Cada th
 
 O cálculo é baseado na série de Taylor para a exponencial:
 
-\[ e \approx \sum_{i=0}^{n} \frac{1}{i!} \]
+![image](https://github.com/lihviaa/parallel-comp/assets/139653746/2cbf277e-9dea-48cf-aff6-ef66ea382edc)
 
 Cada termo da série é calculado como o inverso do fatorial e somado usando a precisão especificada.
 
